@@ -1,0 +1,21 @@
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+nav li a:hover{
+    color: red;
+    background-color: aqua;
+}
+nav li a{
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
