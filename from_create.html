@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Create</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="button"],
+        input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="button"] {
+            background-color: #dc3545;
+        }
+        input[type="reset"] {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;color: #000;">From Create For Purchasing Pitha</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sakib Pitha Ghar Dhaka</h2>
+            <form >
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Pitha Information</legend>
+                    <input type="radio" name="Pitha" id="Chitoi">
+                    <label for="Chitoi">Chitoi Pitha - 50 BDT</label> 
+                    <input type="radio" name="Pitha" id="BhapaPitha">
+                    <label for="BhapaPitha">Bhapa Pitha - 60 BDT</label>
+                    <input type="radio" name="Pitha" id="PatiShapta">
+                    <label for="PatiShapta">Pati Shapta - 70 BDT</label>
+                    <input type="radio" name="Pitha" id="KaloPitha">
+                    <label for="KaloPitha">Kalo Pitha - 60 BDT</label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Vorta Selection</legend>
+                    <input type="checkbox" name="Vorta" id="DimVorta">
+                    <label for="DimVorta">Dim Vorta - 30 BDT</label><br><br>
+                    <input type="checkbox" name="Vorta" id="MocharVorta">
+                    <label for="MocharVorta">Mochar Vorta - 40 BDT</label><br><br>
+                    <input type="checkbox" name="Vorta" id="BegunVorta">
+                    <label for="BegunVorta">Begun Vorta - 35 BDT</label><br><br>
+                </fieldset>
+                            <fieldset>
+                                <legend>Order Information</legend>
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+                            </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="cash">Cash on Delivery</option>
+                        <option value="bkash">bKash</option>
+                        <option value="nagad">Nagad</option>
+                    </select><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Information</legend>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+                    <label for="deliveryDate">Preferred Delivery Date:</label>
+                    <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+                </fieldset>
+                <input type="submit" value="Place Order">
+                <input type="button" value="Cancel" onclick="window.location.reload();">
+                <input type="reset" value="clear">
+  
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;color: #555;">&copy; 2024 Sakib Pitha Ghar Dhaka. All rights reserved.</p>
+    </footer>
+</body>
+</html>
