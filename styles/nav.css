@@ -1,0 +1,15 @@
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: aqua;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul{
+    display: flex;
+}

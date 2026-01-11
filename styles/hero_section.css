@@ -1,0 +1,23 @@
+.banneer{
+    display: flex;
+    background: #9d7878;
+    padding: 25px;
+    margin-top: 25px;
+    gap: 40px;
+    border-radius: 25px;
+}
+.banneer img{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+body{
+   max-width: 800px;
+   background-color: aqua;
+   margin: 0 auto;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
